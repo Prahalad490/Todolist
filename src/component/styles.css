@@ -121,10 +121,10 @@ font-family: 'Satisfy', cursive; */
     padding-left: 65px;
   }
 
-  .closeButton {
+  /* .closeButton {
     top: 135px;
     left: 274px;
-  }
+  } */
 }
 
 .text-field {
@@ -156,13 +156,13 @@ button.donebutton {
   margin-bottom: 3px;
 }
 
-.closeButton {
+/* .closeButton {
   position: fixed;
   bottom: 443px;
   right: 72px;
   z-index: 1;
   color: #737373;
-}
+} */
 
 /* ///////////////////////////////////////////////////// Show list ///////////////////////////////////////////////// */
 

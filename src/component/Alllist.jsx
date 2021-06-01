@@ -6,7 +6,7 @@ import Fab from '@material-ui/core/Fab';
 import AddIcon from "@material-ui/icons/Add";
 import Createlist from "./Createlist";
 import CloseIcon from '@material-ui/icons/Close';
-import { Grow } from "@material-ui/core";
+// import { Grow } from "@material-ui/core";
 
 
 const Alllist = () => {
@@ -46,22 +46,16 @@ const Alllist = () => {
 
     }
 
+    // function floatbutton(){
+    //     setCreator(true)
+    // }
+
 
     
 
 
     return (
         <div className="display-card">
-            <Grow
-            in={showCreator}
-            style={{ transformOrigin: '0 0 0' }}
-            {...(showCreator ? { timeout: 1000 } : {})}
-            >
-                <div className="closeButton" onClick={() => {setCreator(false)}}>
-
-                    <CloseIcon/>
-                </div>
-            </Grow>
             <div>
                 {lists.map((list, index) => (
                     <Zoom key={list._id} id={list._id} in={true}>
@@ -93,10 +87,18 @@ const Alllist = () => {
 
             {showCreator && <Createlist/>}
             
-            
+            {showCreator ? 
+                <Fab className="addfloatbutton" onClick={() => {setCreator(false)}}>
+
+                    <CloseIcon/>
+                </Fab>
+                :
                 <Fab className="addfloatbutton" onClick={() => {setCreator(true)}}>
                     <AddIcon />
                 </Fab>
+            }
+                
+                
             
         </div>
     )

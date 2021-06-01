@@ -2,10 +2,11 @@ import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import axios from "axios";
 import { Fab, Grow, TextField, Zoom } from "@material-ui/core";
+// import CloseIcon from '@material-ui/icons/Close';
 import DoneIcon from '@material-ui/icons/Done';
 
 
-const Createlist = () => {
+const Createlist = (props) => {
 
     const [input, setInput] = useState({
         title:"",
@@ -67,6 +68,7 @@ const Createlist = () => {
                 style={{ transformOrigin: '0 0 0' }}
                 {...(true ? { timeout: 1000 } : {})}
                 >
+                {/* <CloseIcon/> */}
                 <div className="create-list">
                     <h1><strong>Create List</strong></h1>
 
