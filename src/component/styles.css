@@ -1,0 +1,255 @@
+body {
+  background-color: #a9a9a9;
+  background-image: url("https://www.transparenttextures.com/patterns/always-grey.png");
+  /* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
+}
+
+.header {
+  background-color: #caf7e3;
+  color: #737373;
+  text-align: center;
+  padding: 2%;
+  font-family: "Pacifico", cursive;
+}
+
+.display-card {
+  margin: 27px;
+  position: relative;
+}
+
+button.addfloatbutton {
+  background-color: #caf7e3;
+  color: #737373;
+  position: fixed;
+  bottom: 32px;
+  right: 32px;
+}
+
+.card {
+  background-color: #edffec;
+  float: left;
+  width: 271px;
+  height: 200px;
+  margin: 9px 5px;
+  padding: 33px;
+  border-radius: 10px;
+  font-family: "Caveat", cursive;
+  position: relative;
+}
+
+.carddeletebutton {
+  font-size: 1.2rem;
+  margin: 1px;
+  position: absolute;
+  right: 19px;
+  top: 18px;
+  width: 25px;
+  color: #737373;
+  text-decoration: none;
+}
+
+.card:hover {
+  bottom: 10px;
+  animation-name: card-effect;
+  animation-duration: 0.3s;
+}
+
+@keyframes card-effect {
+  0% {
+    bottom: 0;
+  }
+
+  100% {
+    bottom: 10px;
+  }
+}
+
+.list {
+  color: #737373;
+  text-decoration: none;
+}
+
+.list:hover {
+  color: #474c46;
+}
+
+.list h3 {
+  font-size: 2.3rem;
+}
+
+.list h5 {
+  font-size: 1.5rem;
+}
+
+.list p {
+  text-align: center;
+  position: absolute;
+  bottom: 0px;
+}
+
+/* ////////////////////////////////////////////////// Create to do list ///////////////////////////////////////////// */
+/* font-family: 'Pacifico', cursive;
+font-family: 'Satisfy', cursive; */
+
+.create-list {
+  text-align: left;
+  background-color: #caf7e3;
+  position: fixed;
+  height: auto;
+  width: 336px;
+  bottom: 121px;
+  right: 37px;
+  padding: 37px;
+  padding-left: 65px;
+  border-radius: 10px;
+  box-shadow: -11px 11px 15px #b7b7b7;
+  font-family: "Caveat", cursive;
+}
+
+@media screen and (max-width: 400px) {
+  button.addfloatbutton {
+    bottom: 20px;
+    right: 20px;
+  }
+
+  .create-list {
+    height: auto;
+    width: 314px;
+    bottom: 100px;
+    right: 27px;
+    padding: 37px;
+    padding-left: 65px;
+  }
+
+  .closeButton {
+    top: 135px;
+    left: 274px;
+  }
+}
+
+.text-field {
+  margin: 20px 0px;
+}
+
+.text-field label {
+  font-size: 1.3rem;
+}
+
+.add {
+  border: none;
+  font-size: 1.3rem;
+  padding: 2px;
+  width: 61px;
+  border-radius: 3px;
+  box-shadow: 0px 0px 4px #9a9a9a;
+  color: #737373;
+  background-color: #e8e8e8;
+  margin-top: 18px;
+}
+
+.add:hover {
+  background-color: #dbdbdb;
+}
+
+button.donebutton {
+  margin-left: 94px;
+  margin-bottom: 3px;
+}
+
+.closeButton {
+  position: fixed;
+  bottom: 443px;
+  right: 72px;
+  z-index: 1;
+  color: #737373;
+}
+
+/* ///////////////////////////////////////////////////// Show list ///////////////////////////////////////////////// */
+
+.listbody {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+}
+
+.listbox {
+  background-color: #edffec;
+  position: relative;
+  top: 9px;
+  bottom: auto;
+  font-family: "Caveat", cursive;
+  color: #737373;
+  width: 356px;
+  padding: 29px;
+  border-radius: 15px;
+}
+
+@media screen and (max-width: 480px) {
+  .listbody {
+    width: 100%;
+  }
+
+  .listbox {
+    width: 300px;
+  }
+
+  .listbody h2 {
+    font-size: 3.5rem;
+  }
+}
+
+.listbody h2 {
+  font-size: 3.5rem;
+
+  margin: 43px 0px 25px;
+}
+
+.listbody h5 {
+  font-size: 1.8rem;
+}
+
+.inputfield {
+  text-align: center;
+  margin-top: 60px;
+}
+
+.addbutton {
+  margin-top: 10px;
+  background-color: #caf7e3;
+  border: none;
+  border-radius: 2px;
+  font-size: 1.2rem;
+  width: 56px;
+  box-shadow: 0px 0px 4px #9a9a9a;
+  color: #737373;
+}
+
+.addbutton:hover {
+  background-color: #dbdbdb;
+}
+
+button.backButton {
+  background-color: #caf7e3;
+  color: #737373;
+  position: absolute;
+  right: 29px;
+  top: 23px;
+}
+
+.warning-para {
+  position: absolute;
+  top: 80px;
+  padding: 51px;
+  text-align: center;
+  border-radius: 10px;
+  box-shadow: 11px -6px 12px #bfbfbf;
+  background-color: #caf7e3;
+}
+
+.okbutton {
+  border: none;
+  background: white;
+  width: 60px;
+  border-radius: 4px;
+}
